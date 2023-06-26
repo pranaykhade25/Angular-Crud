@@ -1,0 +1,91 @@
+.font-control{
+    border-radius: 5px;
+    margin-left: 25px;
+    width: 600px;
+}
+
+.search-icon{
+    z-index: 10;
+    position: absolute;
+    right:47%;
+    top: 30%;
+    color: blue;
+}
+
+.cart{
+    position:absolute;
+    right: 2%;
+}
+* {
+	
+	box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+  line-height:1.6;
+}
+.Homecontainer{
+	
+	width:100%;
+	height:100%;
+	overflow-y:scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type:y mandantory;
+	
+}
+/*background color */
+.topnav {
+	
+ 	background-color: #9a81c6
+     ;
+  	overflow: hidden;
+  	position:fixed;
+  	top:0;
+ 	z-index:1;
+	margin:0;
+    padding:0;
+    display:flex;
+  	width:100%;
+  	height:60px;
+  	
+}
+
+
+/* Style the links */
+.topnav a {
+	display:flex;
+  	float: left;
+  	color:black ;
+ 	 text-align: center;
+ 	 padding: 16px 25px;
+  	text-decoration: none;
+  	font-size: 16px;
+}
+
+/* hover & link color */
+.topnav a:hover {
+  background-color:#e7aafb
+  
+}
+
+/* Active Link color */
+.topnav a.active {
+  background-color:#908efc
+  
+}
+
+.carousel-item{
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-caption{
+   margin-left: 400px;
+   margin-bottom: 100px;
+}
+
+
+h2{
+	font-size: 16px;
+}

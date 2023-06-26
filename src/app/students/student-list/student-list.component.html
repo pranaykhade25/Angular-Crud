@@ -1,0 +1,31 @@
+<br>
+<h1 class="display-5 text-center">Course Details</h1>
+<div> </div>
+ 
+<table class="table table-hover student-details-table-width">
+    <thead align="center">
+       
+        <th>Name</th>
+        <th>Branch Name</th>
+        <th>Type</th>
+        <th>Price</th>
+        <th>Edit?</th>
+        <th>Delete?</th>
+    </thead>
+    <tbody align="center">
+        <tr *ngFor="let courseInfo of courseList">
+            <td>{{courseInfo.fullName}}<span>.</span></td>
+            <td>{{courseInfo.branchName}}</td>
+            <td>{{courseInfo.level}}</td>
+            <td>{{courseInfo.cost}}</td>
+            <td>
+                <button class="btn1" (click)="onEdit(courseInfo)"><i class="fa fa-edit" title="Edit">Edit</i></button></td>
+            <td>
+                <button class="btn2" (click)="onDelete(courseInfo)"><i class="fa fa-trash" title="Delete">Delete</i></button></td>
+        </tr>
+    </tbody>
+</table>
+ 
+<div class="error" *ngIf="deleteMessage">
+    <h5 class="text-dark">{{ deleteMessage }}</h5>
+</div>

@@ -1,0 +1,17 @@
+h3{
+    background-color: tan;
+    font-size: 28px;
+}
+.example-large-box {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .example-large-box,img {
+    height: 300px;
+    width: 300px;
+  }
